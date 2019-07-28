@@ -1,0 +1,138 @@
+{
+  "id": "79893936-3e49-4b7b-aaf7-58a9e315b7bf",
+  "version": "2.0",
+  "name": "Login",
+  "url": "https://www.romewar.ru",
+  "tests": [{
+    "id": "1366ce37-7c1e-40ec-8d8d-003a9711ddde",
+    "name": "L1",
+    "commands": [{
+      "id": "d9564d6b-ccd8-494e-9143-44e2d11d9efa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "782e4855-9fda-4d23-abd3-c3aff3335dd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdfd0f32-07d8-4c33-9213-abb02da98eb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Gladiolus1"
+    }, {
+      "id": "9bd350d8-28b2-47a4-823b-c2322ab5f014",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881f85a7-7d26-43a6-b134-c52dfced435b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "qwerty123"
+    }, {
+      "id": "4dfad616-835f-43b6-8f4b-3b8edcedc8ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-submit",
+      "targets": [
+        ["id=login-submit", "id"],
+        ["css=#login-submit", "css:finder"],
+        ["xpath=//button[@id='login-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40c49060-b61b-4c6f-a27f-5b2a3ac7bb09",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "832d2af0-bda6-4f47-9cc9-61f8d9764e02",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16ea6115-930b-4344-8ad2-3f41fdbe4188",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > img",
+      "targets": [
+        ["css=a:nth-child(2) > img", "css:finder"],
+        ["xpath=//td[6]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83cfb23a-5a52-4fb6-a6b5-1a5e3a788bf0",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Выйти из игры?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19d75a17-00e0-4516-87bf-a4fd37193e76",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "66557a86-0897-463f-b7e7-28f2319eb216",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1366ce37-7c1e-40ec-8d8d-003a9711ddde"]
+  }],
+  "urls": ["https://www.romewar.ru/"],
+  "plugins": []
+}
